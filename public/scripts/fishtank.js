@@ -78,6 +78,7 @@ class Fishtank {
   drawGraphics() {
     this.runPhysics();  // TODO: maybe this should be on a separate setInterval
     var $fishtank = $('#' + this.divName);
+      // $fishtank.css('background') = this.backgroundUri;
     var centerX = Math.floor(window.innerWidth / 2);
     var floorY  = Math.floor(window.innerHeight * 0.95);
     for (var id in this.denizens) {
